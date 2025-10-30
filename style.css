@@ -1,0 +1,77 @@
+:root{
+  --text-color:#333;
+  --base-textAccent: #444;
+  --bg-color: white;
+  --base-variant: #e8e9ed;
+  --primary-color: #3a435d;
+
+}
+
+.dark-mode{
+  --text-color:#ccd6f6;
+  --base-variant: #101425;
+  --base-textAccent: #64ffda;
+  --bg-color: #0a192f;
+  --primary-color: #3a435d;
+
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+h1, h2, h3 {
+  color: var(--base-textAccent); /* accent green */
+}
+
+a {
+  color: var(--base-textAccent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+}
+
+#theme-switch{
+  height: 50px;
+  width: 50px;
+  padding:0; 
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  display: flex;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  
+}
+#theme-switch svg{
+  fill: var(--primary-variant);
+}
+
+#theme-switch svg:last-child{
+  display: none;
+}
+.dark-mode #theme-switch svg:first-child{
+  display: none;
+}
+.dark-mode #them-swich svg:last-child{
+  display: block;
+}
