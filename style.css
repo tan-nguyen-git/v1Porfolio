@@ -9,7 +9,7 @@
 
 .dark-mode{
   --text-color:#ccd6f6;
-  --base-variant: #101425;
+  --base-variant: white;
   --base-textAccent: #64ffda;
   --bg-color: #0a192f;
   --primary-color: #3a435d;
@@ -58,6 +58,8 @@ a:hover {
   background-color: var(--base-variant);
   display: flex;
   position: fixed;
+  justify-content: center;
+  align-items: center;
   top: 20px;
   right: 20px;
   
@@ -72,6 +74,6 @@ a:hover {
 .dark-mode #theme-switch svg:first-child{
   display: none;
 }
-.dark-mode #them-swich svg:last-child{
+.dark-mode #theme-switch svg:last-child{
   display: block;
 }

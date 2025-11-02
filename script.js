@@ -1,4 +1,5 @@
 let darkMode = localStorage.getItem('dark-mode');
+
 const themeSwitch = document.getElementById('theme-switch');
 
 const enableDarkmode = ()=>{
